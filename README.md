@@ -44,7 +44,6 @@ Additionally, the project uses AWS Lambda functions to process and transform inc
 
 ## Architecture
 
-![Architecture Diagram](./image.png)
 
 ### Key Components:
 1. **DHT11 Sensor**: Reads temperature and humidity data.
