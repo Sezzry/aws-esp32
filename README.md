@@ -14,7 +14,7 @@ This project involves collecting data from a DHT11 sensor using an ESP32, sendin
 - [Setup Instructions](#setup-instructions)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 
 
@@ -130,7 +130,5 @@ If you would like to contribute to this project, feel free to fork the repositor
 2. Document any changes in the README.
 3. Test your changes locally before pushing.
 
-## License
 
-This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
 
