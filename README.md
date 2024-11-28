@@ -17,6 +17,7 @@ This project involves collecting data from a DHT11 sensor using an ESP32, sendin
 
 
 
+## Architecture
 
 
 
@@ -41,8 +42,6 @@ Additionally, the project uses AWS Lambda functions to process and transform inc
 - DynamoDB and S3 Bucket listen to `+/telemetry` topics for incoming data.
 - Presence events (online/offline) are routed based on the topic `$aws/events/presence/+/+`.
 - Data is visualized and monitored through AWS Amplify.
-
-## Architecture
 
 
 ### Key Components:
