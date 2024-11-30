@@ -25,6 +25,13 @@ This project involves collecting data from a DHT11 sensor using an ESP32, sendin
 ![image](https://github.com/user-attachments/assets/c230aaad-1404-407a-993d-5d84c6213af1)
 
 
+## DHT11 ESP32 Connection
+
+
+![image](https://github.com/user-attachments/assets/10fe7c40-57bd-4a20-9fad-4b8345b25c42)
+
+
+
 
 ## Description
 
