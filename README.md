@@ -133,6 +133,7 @@ Once the setup is complete, the ESP32 will continuously send temperature and hum
 1. **Monitor device presence** via AWS IoT Core and check status with the `$aws/events/presence/+/+` rule.
 2. **View telemetry data** through the AWS Amplify web interface.
 
+KAN TAS BORT
 ## Contributing
 
 If you would like to contribute to this project, feel free to fork the repository and create pull requests. Please ensure that your contributions adhere to the following:
