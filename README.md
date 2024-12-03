@@ -23,7 +23,7 @@ Goal: To continuously monitor and collect temperature and humidity data from ren
 
 
 
-## Architecture
+## Architecture  //LÄGG TILL LAMBDA TILL DISCORD NOTIS I BILDEN
 
 
 
