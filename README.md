@@ -1,4 +1,4 @@
-# aws-esp32 ##Saran Kongthong
+# aws-esp32 ##Saran Kongthong //UPPDATERA DISCORD NOTIS I FEATURE OSV
 
 
 # IoT Data Collection and Visualization
