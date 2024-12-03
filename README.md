@@ -28,7 +28,7 @@ Goal: To continuously monitor and collect temperature and humidity data from ren
 
 
 
-![image](https://github.com/user-attachments/assets/29fe4e40-8d88-4a06-9111-e4e1b37a70af)
+![image](https://github.com/user-attachments/assets/d98cf403-6126-419f-858a-fb08ff019ec1)
 
 
 
