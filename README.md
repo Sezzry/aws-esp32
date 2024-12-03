@@ -165,4 +165,4 @@ Once the setup is complete, the ESP32 will continuously send temperature and hum
 3. **Receive Discord notifications** when the temperature falls to 18°C or below.
 
 
-## Saran Kongthong
+# Saran Kongthong
