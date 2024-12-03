@@ -23,12 +23,13 @@ Goal: To continuously monitor and collect temperature and humidity data from ren
 
 
 
-## Architecture  //LÄGG TILL LAMBDA TILL DISCORD NOTIS I BILDEN
+## Architecture
 
 
 
 
-![image](https://github.com/user-attachments/assets/c230aaad-1404-407a-993d-5d84c6213af1)
+![image](https://github.com/user-attachments/assets/29fe4e40-8d88-4a06-9111-e4e1b37a70af)
+
 
 
 ## DHT11 ESP32 Connection
