@@ -140,10 +140,4 @@ Once the setup is complete, the ESP32 will continuously send temperature and hum
 2. **View telemetry data** through the AWS Amplify web interface.
 3. **Receive Discord notifications** when the temperature falls to 18°C or below.
 
-## Contributing
 
-If you would like to contribute to this project, feel free to fork the repository and create pull requests. Please ensure that your contributions adhere to the following:
-
-1. Write clear and concise commit messages.
-2. Document any changes in the README.
-3. Test your changes locally before pushing.
