@@ -1,12 +1,9 @@
-# aws-esp32 ##Saran Kongthong //UPPDATERA DISCORD NOTIS I FEATURE OSV
-
-
 # IoT Data Collection and Visualization
 
 This project involves collecting data from a DHT11 sensor using an ESP32, sending the data through MQTT to AWS IoT Core, and then storing the data in Amazon DynamoDB and an S3 bucket. The data is also visualized using AWS Amplify. The system listens to specific MQTT topics and processes incoming data.
 
 # Use Case for Temperature and Humidity Monitoring for Reporting to Tenant Association
-Use Case Title: Temperature and Humidity Measurement for Optimal Indoor Environment and Reporting
+Use Case Title: Temperature and Humidity Measurement for Optimal Indoor Environment and Reporting  
 Primary Actor: Property Manager or Landlord
 
 Goal: To continuously monitor and collect temperature and humidity data from rental properties during the winter months to ensure optimal living conditions and report to the tenant association if the temperature is too low.
@@ -21,38 +18,35 @@ Goal: To continuously monitor and collect temperature and humidity data from ren
 - [Usage](#usage)
 - [Contributing](#contributing)
 
-
-
 ## Architecture
-
-
-
 
 ![image](https://github.com/user-attachments/assets/89a659f6-e8fa-43dc-81ea-0121a7ff242d)
 
-
-
-
 ## DHT11 ESP32 Connection
-
 
 ![image](https://github.com/user-attachments/assets/10fe7c40-57bd-4a20-9fad-4b8345b25c42)
 
-## Connection description
-- ESP32 5v-VCC DHT11/DHT22 
+### Connection description
+- ESP32 5v-VCC DHT11/DHT22
 - ESP32 GPIO PIN 0-DATA DHT11/DHT22
 - ESP32 GND-GND DHT11/DHT22
-
-
-
 
 ## Description
 
 This project connects an ESP32 to a DHT11 sensor to collect temperature and humidity data. The data is then transmitted to AWS IoT Core over MQTT, where it is routed and stored in two places:
 1. **DynamoDB** – Data is stored in a NoSQL database for further processing and retrieval.
 2. **S3 Bucket** – Data is stored in an S3 bucket for backup or storage purposes.
-   
+
 Additionally, the project uses AWS Lambda functions to process and transform incoming data as needed. AWS Amplify is used to visualize the data in a user-friendly interface.
+
+### New Feature: Discord Notification for Low Temperature
+
+A notification is sent to a Discord channel when the temperature drops to 18°C or below. The webhook URL for Discord is securely stored in AWS Secrets Manager to ensure security.
+
+To configure the Discord notification:
+1. Create a Discord webhook in your server settings.
+2. Store the webhook URL in AWS Secrets Manager or set it as an environment variable in AWS Lambda.
+3. Ensure the Lambda function processes the temperature data and sends a notification if the temperature drops below the threshold.
 
 ## Features
 
@@ -62,7 +56,7 @@ Additionally, the project uses AWS Lambda functions to process and transform inc
 - DynamoDB and S3 Bucket listen to `+/telemetry` topics for incoming data.
 - Presence events (online/offline) are routed based on the topic `$aws/events/presence/+/+`.
 - Data is visualized and monitored through AWS Amplify.
-
+- **New**: Sends a Discord notification when the temperature falls to 18°C or below.
 
 ### Key Components:
 1. **DHT11 Sensor**: Reads temperature and humidity data.
@@ -72,6 +66,7 @@ Additionally, the project uses AWS Lambda functions to process and transform inc
 5. **Amazon S3 Bucket**: Stores telemetry data for backup.
 6. **AWS Lambda**: Processes incoming data for further operations.
 7. **AWS Amplify**: Visualizes the collected data in a web interface.
+8. **Discord Webhook**: Sends notifications to Discord when temperature drops below 18°C.
 
 ## Requirements
 
@@ -106,6 +101,9 @@ Before starting, ensure you have the following:
 5. **Setup AWS Lambda**:
    - Create a Lambda function to process the incoming data from MQTT.
    - Connect the Lambda function to the `+/telemetry` and `$aws/events/presence/+/+` rules.
+   - **Add Discord Notification Logic**: 
+     - Securely store your Discord webhook URL in **AWS Secrets Manager** or as an **environment variable**.
+     - Add the logic in the Lambda function to send a Discord notification when the temperature drops to 18°C or below.
 
 ### Step 2: Setup the ESP32 and DHT11
 
@@ -133,6 +131,7 @@ Before starting, ensure you have the following:
 1. **Power on ESP32** and monitor data being sent to AWS IoT Core.
 2. **Check DynamoDB** and **S3 Bucket** for incoming data.
 3. **View the data** in the AWS Amplify interface.
+4. **Verify Discord Notifications** by testing temperature drops to 18°C or below.
 
 ## Usage
 
@@ -140,8 +139,8 @@ Once the setup is complete, the ESP32 will continuously send temperature and hum
 
 1. **Monitor device presence** via AWS IoT Core and check status with the `$aws/events/presence/+/+` rule.
 2. **View telemetry data** through the AWS Amplify web interface.
+3. **Receive Discord notifications** when the temperature falls to 18°C or below.
 
-KAN TAS BORT
 ## Contributing
 
 If you would like to contribute to this project, feel free to fork the repository and create pull requests. Please ensure that your contributions adhere to the following:
@@ -149,6 +148,3 @@ If you would like to contribute to this project, feel free to fork the repositor
 1. Write clear and concise commit messages.
 2. Document any changes in the README.
 3. Test your changes locally before pushing.
-
-
-
