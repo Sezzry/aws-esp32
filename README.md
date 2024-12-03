@@ -39,9 +39,8 @@ This project connects an ESP32 to a DHT11 sensor to collect temperature and humi
 
 Additionally, the project uses AWS Lambda functions to process and transform incoming data as needed. AWS Amplify is used to visualize the data in a user-friendly interface.
 
-### New Feature: Discord Notification for Low Temperature
 
-A notification is sent to a Discord channel when the temperature drops to 18°C or below. The webhook URL for Discord is securely stored in AWS Secrets Manager to ensure security.
+A notification is sent to a Discord channel when the temperature drops to 18°C or below.
 
 To configure the Discord notification:
 1. Create a Discord webhook in your server settings.
@@ -56,7 +55,7 @@ To configure the Discord notification:
 - DynamoDB and S3 Bucket listen to `+/telemetry` topics for incoming data.
 - Presence events (online/offline) are routed based on the topic `$aws/events/presence/+/+`.
 - Data is visualized and monitored through AWS Amplify.
-- **New**: Sends a Discord notification when the temperature falls to 18°C or below.
+- Sends a Discord notification when the temperature falls to 18°C or below.
 
 ### Key Components:
 1. **DHT11 Sensor**: Reads temperature and humidity data.
