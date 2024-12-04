@@ -1,3 +1,6 @@
+# Saran Kongthong
+
+
 # IoT Data Collection and Visualization
 
 This project involves collecting data from a DHT11 sensor using an ESP32, sending the data through MQTT to AWS IoT Core, and then storing the data in Amazon DynamoDB and an S3 bucket. The data is also visualized using AWS Amplify. The system listens to specific MQTT topics and processes incoming data.
@@ -168,6 +171,3 @@ Once the setup is complete, the ESP32 will continuously send temperature and hum
 1. **Monitor device presence** via AWS IoT Core and check status with the `$aws/events/presence/+/+` rule.
 2. **View telemetry data** through the AWS Amplify web interface.
 3. **Receive Discord notifications** when the temperature falls to 18°C or below.
-
-
-# Saran Kongthong
