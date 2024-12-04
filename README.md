@@ -28,7 +28,7 @@ This project involves collecting data from a DHT11 sensor using an ESP32, sendin
 
 ## Amplify Visualisation 
 
-![image](https://github.com/user-attachments/assets/762d8f82-6b48-4c5f-9ceb-821551bbde3e)
+![image](https://github.com/user-attachments/assets/a83355bf-a9b1-4d2a-a20b-1bd6ab54f2ac)
 
 
 ### Connection description
