@@ -16,7 +16,6 @@ This project involves collecting data from a DHT11 sensor using an ESP32, sendin
 - [Requirements](#requirements)
 - [Setup Instructions](#setup-instructions)
 - [Usage](#usage)
-- [Contributing](#contributing)
 
 ## Architecture
 
