@@ -3,7 +3,7 @@
 This project involves collecting data from a DHT11 sensor using an ESP32, sending the data through MQTT to AWS IoT Core, and then storing the data in Amazon DynamoDB and an S3 bucket. The data is also visualized using AWS Amplify. The system listens to specific MQTT topics and processes incoming data.
 
 ## Use Case for Temperature and Humidity Monitoring for Reporting to Tenant Association
-**Use Case Title**: Temperature and Humidity Measurement for Optimal Indoor Environment and Reporting  
+**Use Case Title**: Temperature and Humidity Measurement for Optimal Indoor Environment and Reporting. The optimal indoor temperature should be 20-23 Celsius.
 **Primary Actor**: Property Manager or Landlord
 
 **Goal**: To continuously monitor and collect temperature and humidity data from rental properties during the winter months to ensure optimal living conditions and report to the tenant association if the temperature is too low.
