@@ -26,6 +26,11 @@ This project involves collecting data from a DHT11 sensor using an ESP32, sendin
 
 ![image](https://github.com/user-attachments/assets/10fe7c40-57bd-4a20-9fad-4b8345b25c42)
 
+## Amplify Visualisation 
+
+![image](https://github.com/user-attachments/assets/762d8f82-6b48-4c5f-9ceb-821551bbde3e)
+
+
 ### Connection description
 - ESP32 5v-VCC DHT11/DHT22
 - ESP32 GPIO PIN 0-DATA DHT11/DHT22
